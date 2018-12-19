@@ -1,6 +1,7 @@
 {
   "name": "Network UPS Tools",
   "version": "0.1",
+  "debug": true,
   "slug": "nut",
   "description": "Manage Uninterruptible Power Supplies",
   "startup": "before",
