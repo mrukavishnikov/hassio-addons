@@ -4,6 +4,9 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache jq 
+RUN apk add --update --update-cache --repository https://nl.alpinelinux.org/alpine/edge/main/ libcrypto1.1
+RUN apk add --update --update-cache --repository https://nl.alpinelinux.org/alpine/edge/main/ net-snmp-libs
+RUN apk add --update --update-cache --repository https://nl.alpinelinux.org/alpine/edge/main/ libssl1.1
 RUN apk add --update --update-cache --repository https://nl.alpinelinux.org/alpine/edge/testing/ nut
 
 RUN mkdir /var/run/nut
